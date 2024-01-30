@@ -15,13 +15,13 @@ function Products() {
   
     const cards = products.map(
         product => (
-            <div className="col-md-3" style={{margin: '12px'}} key={product.id}>
-            <Card style={{ width: '270px', height: '330px', textAlign: 'center', margin: '12px 12px'}}>
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={product.id}>
+            <Card style={{ width: '320px', height: '220px', textAlign: 'center', margin: '2px 2px'}}>
                 <Card.Img variant="top" src={product.image} style={{width:'73px', height:'100px' }} className='mx-auto' />
                 <Card.Body>
-                    <Card.Title>{product.title}</Card.Title>
+                    <Card.Title style={{fontSize: '12px'}}>{product.title}</Card.Title>
                     <Card.Text>
-                    {product.price}
+                    ${product.price}
                     </Card.Text>
                 </Card.Body>
                 <Card.Footer style={{background: 'white', borderTop: 'none'}}> 

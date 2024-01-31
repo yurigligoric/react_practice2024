@@ -1,8 +1,9 @@
 import React from 'react'
+import Product from './products'
 
 function Dashboard() {
   return (
-    <div>dashboard</div>
+    <div><Product /></div>
   )
 }
 
